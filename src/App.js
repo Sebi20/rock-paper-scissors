@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react';
+import paper from './paper.svg';
+import rock from './rock.svg';
+import scissors from './scissors.svg'
 
 function App() {
+  const[sign, setSign] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 className='header'>Rock, Paper, Scissors?</h1>
+
+      <div className='signContainer'>
+        <img src={rock}></img>
+        <img src={paper}></img>
+        <img src={scissors}></img>
+      </div>
+    </>
   );
 }
 
