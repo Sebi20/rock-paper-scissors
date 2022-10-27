@@ -1,5 +1,7 @@
 .signContainer{
   display: flex;
+  align-items: center;
+justify-content: center;
 }
 
 .signContainer img{
@@ -14,4 +16,14 @@
 .sign:hover {
   transform: scale(1.4);
   cursor: pointer;
+}
+
+.result{
+  text-align: center;
+  animation: grow 2s 2;
+}
+
+@keyframes grow {
+  from{color: aliceblue;}
+  to{color: red;}
 }

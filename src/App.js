@@ -14,9 +14,9 @@ function App() {
     setSign(param);
 
     if(randomSign[Math.floor(Math.random() * 3)] === param){
-      setResult('WIN!!!');
+      setResult('WIN!!! 😁 Go again');
     }else {
-      setResult("FAIL!!!");
+      setResult("FAIL!!! 😢 Go again");
     }
   }
 
@@ -24,7 +24,7 @@ function App() {
     <>
       <h1 className='header'>Rock, Paper, Scissors?</h1>
       
-      <h2>{result}</h2>
+      <h2 className='result'>{result}</h2>
       <div className='signContainer'>
         <img class='sign' onClick={() => {check("rock")}} src={rock}></img>
         <img class='sign' onClick={() => {check("papaer")}} src={paper}></img>
